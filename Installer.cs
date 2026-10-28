@@ -11,6 +11,7 @@ using System.Reflection;
 using System.Security.Cryptography;
 using System.IO.Compression;
 using System.Web.Script.Serialization;
+using System.Text;
 using Microsoft.Win32;
 
 class Program
@@ -185,6 +186,30 @@ class Program
         }
     }
 
+    // Quote one Windows process argument, not a PowerShell expression. This keeps
+    // apostrophes and shell metacharacters in folder names as literal path text.
+    public static string QuoteArgument(string value)
+    {
+        var quoted = new StringBuilder("\"");
+        int backslashes = 0;
+        foreach (char character in value)
+        {
+            if (character == '\\')
+            {
+                backslashes++;
+                continue;
+            }
+
+            quoted.Append('\\', character == '"' ? backslashes * 2 + 1 : backslashes);
+            quoted.Append(character);
+            backslashes = 0;
+        }
+
+        quoted.Append('\\', backslashes * 2);
+        quoted.Append('"');
+        return quoted.ToString();
+    }
+
     public static Tuple<int, string> Run(string action, string game)
     {
         if (!new[]
@@ -233,9 +258,12 @@ class Program
 
             string script = Path.Combine(work, "Patch.ps1");
             string shell = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"WindowsPowerShell\v1.0\powershell.exe");
-            // Encoded command preserves spaces, apostrophes and shell metacharacters in selected paths.
-            string command = "$ProgressPreference='SilentlyContinue'; try { & '" + script.Replace("'", "''") + "' -Action '" + action + "' -GamePath '" + game.Replace("'", "''") + "'" + (action == "Install" ? " -CloneSaves" : "") + "; exit $LASTEXITCODE } catch { [Console]::Error.WriteLine($_.Exception.Message); exit 1 }";
-            var info = new ProcessStartInfo(shell, "-NoProfile -NonInteractive -ExecutionPolicy Bypass -OutputFormat Text -EncodedCommand " + Convert.ToBase64String(System.Text.Encoding.Unicode.GetBytes(command)))
+            // Invoke the auditable script directly and respect the machine's
+            // execution policy. Never encode commands or override security policy.
+            string arguments = "-NoProfile -NonInteractive -OutputFormat Text -File " +
+                QuoteArgument(script) + " -Action " + QuoteArgument(action) +
+                " -GamePath " + QuoteArgument(game) + (action == "Install" ? " -CloneSaves" : "");
+            var info = new ProcessStartInfo(shell, arguments)
             {
                 UseShellExecute = false,
                 CreateNoWindow = true,
