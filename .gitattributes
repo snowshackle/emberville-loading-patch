@@ -1,6 +1,11 @@
 * text=auto
+*.cs text eol=lf
+*.ps1 text eol=lf
+*.py text eol=lf
 *.dll binary
 *.exe binary
 *.zip binary
 *.gz binary
 *.pyd binary
+# Package checksums cover exact bytes, including line endings.
+Package/** -text whitespace=cr-at-eol
