@@ -1,0 +1,6 @@
+* text=auto
+*.dll binary
+*.exe binary
+*.zip binary
+*.gz binary
+*.pyd binary

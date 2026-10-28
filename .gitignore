@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+/Emberville-Patch-Only-Installer.exe
+/Emberville-Patch-Only-Installer.exe.sha256.txt
+/payload/
+/asset-work/
+/Test Game/
+**/EmbervillePatch/
+**/.EmbervilleLoadingPatch/

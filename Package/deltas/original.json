@@ -1,0 +1,229 @@
+{
+  "source_sha256": "C01B5F3AC4DAF762C1C7E7D5D39DBC3B03991692166DDACE7F743C2279E40B01",
+  "bundle": {
+    "version": 8,
+    "unity": "5.x.x",
+    "revision": "6000.1.17f1",
+    "nodes": [
+      {
+        "name": "globalgamemanagers",
+        "offset": 0,
+        "length": 50928456,
+        "flags": 4,
+        "source": "globalgamemanagers",
+        "sha256": "2A59EBF5DCF3D8AA5495181D39AD7921C0C447FEACB35B45664AD455F65C00BC",
+        "patch": "0.evdelta.gz"
+      },
+      {
+        "name": "Resources/unity_builtin_extra",
+        "offset": 50928456,
+        "length": 392128,
+        "flags": 4,
+        "source": "Resources/unity_builtin_extra",
+        "sha256": "34FE829CB5369F5D6ABE8A9DB9A2A1BF4E08AAF5009A98BC07A542781BD9ABF2",
+        "patch": "1.evdelta.gz"
+      },
+      {
+        "name": "globalgamemanagers.assets",
+        "offset": 51320584,
+        "length": 1743448,
+        "flags": 4,
+        "source": "globalgamemanagers.assets",
+        "sha256": "35D88D28E88F4F61E1CC6E2EBF85CFFF33E255A18D391762409734B572F69903",
+        "patch": "2.evdelta.gz"
+      },
+      {
+        "name": "sharedassets0.assets",
+        "offset": 53064032,
+        "length": 396474816,
+        "flags": 4,
+        "source": "sharedassets0.assets",
+        "sha256": "44304E855CF0E684F641FBBE7A2EA5AE40D2733F226CFF718A0F88DFDEB4099B",
+        "patch": "3.evdelta.gz"
+      },
+      {
+        "name": "globalgamemanagers.assets.resS",
+        "offset": 449538848,
+        "length": 6764768,
+        "flags": 0,
+        "source": "globalgamemanagers.assets.resS",
+        "sha256": "2B958311471F8C1DC18A481D1F6849C1FBD952798DB04E93D13D60C45B1E3F76"
+      },
+      {
+        "name": "sharedassets0.assets.resS",
+        "offset": 456303616,
+        "length": 14997120,
+        "flags": 0,
+        "source": "sharedassets0.assets.resS",
+        "sha256": "28967DB586B9282B5694A904C46C43213F85FA4BFEDE36B4DDCAAEB8D59E9B5E"
+      },
+      {
+        "name": "level0",
+        "offset": 471300736,
+        "length": 37064,
+        "flags": 4,
+        "source": "level0",
+        "sha256": "B31CF8E2BE954148D6E606DC68D022939CA34B42581A0FB46EA74C1168289D81",
+        "patch": "6.evdelta.gz"
+      },
+      {
+        "name": "sharedassets1.assets",
+        "offset": 471337800,
+        "length": 30645504,
+        "flags": 4,
+        "source": "sharedassets1.assets",
+        "sha256": "6F1320CEFCC383FE21A37B9562F939340495C7DB303F274D8EB6863D3647274F",
+        "patch": "7.evdelta.gz"
+      },
+      {
+        "name": "sharedassets1.assets.resS",
+        "offset": 501983304,
+        "length": 230316624,
+        "flags": 0,
+        "source": "sharedassets1.assets.resS",
+        "sha256": "9E0A4E9020BA6E22A9B7AAB25123608FD6C6B3C4EFEB2ED29CC5C2DCDEEC6A42"
+      },
+      {
+        "name": "level1",
+        "offset": 732299928,
+        "length": 1267256,
+        "flags": 4,
+        "source": "level1",
+        "sha256": "006D4AC69AA2EF9733BF01090FC5CB0B0F8D01DF3FA88FB11D8957A636DF5A44",
+        "patch": "9.evdelta.gz"
+      },
+      {
+        "name": "sharedassets2.assets",
+        "offset": 733567184,
+        "length": 40435344,
+        "flags": 4,
+        "source": "sharedassets2.assets",
+        "sha256": "48787018163629D88F449DDC9672C62E7FF0DBD52BA55458540E4EB263E8C3BA",
+        "patch": "10.evdelta.gz"
+      },
+      {
+        "name": "sharedassets2.assets.resS",
+        "offset": 774002528,
+        "length": 66354784,
+        "flags": 0,
+        "source": "sharedassets2.assets.resS",
+        "sha256": "E1676BAFE296D646F198217CF2A2EAA60EC709EAF28766E2B26D62AF9FC948D7"
+      },
+      {
+        "name": "level2",
+        "offset": 840357312,
+        "length": 55959600,
+        "flags": 4,
+        "source": "level2",
+        "sha256": "6F18345CF6E691067422CB2CB198BA5175E273986B6AACEF64F43E4A089F37D1",
+        "patch": "12.evdelta.gz"
+      },
+      {
+        "name": "sharedassets3.assets",
+        "offset": 896316912,
+        "length": 14236704,
+        "flags": 4,
+        "source": "sharedassets3.assets",
+        "sha256": "8B9D2B6E575997431015B1185990D7B8BAC8E77772983E00BC02D38B88C71E0E",
+        "patch": "13.evdelta.gz"
+      },
+      {
+        "name": "sharedassets3.assets.resS",
+        "offset": 910553616,
+        "length": 79102784,
+        "flags": 0,
+        "source": "sharedassets3.assets.resS",
+        "sha256": "FD152AE0A608703E935A1FF797F73F0C803854CDA78F43617EE54CF3D87A4CBA"
+      },
+      {
+        "name": "level3",
+        "offset": 989656400,
+        "length": 7884984,
+        "flags": 4,
+        "source": "level3",
+        "sha256": "B6EFEC3CFDBB016BA6B37C04CE129A7F36F0010413CC209E6F9DFD723942D36D",
+        "patch": "15.evdelta.gz"
+      },
+      {
+        "name": "sharedassets4.assets",
+        "offset": 997541384,
+        "length": 13769704,
+        "flags": 4,
+        "source": "sharedassets4.assets",
+        "sha256": "8B02D53036412A4552FE3D6ABF51B19F3F5DFEAAAFE6DC9420C25A7EEA8B2F4C",
+        "patch": "16.evdelta.gz"
+      },
+      {
+        "name": "sharedassets4.assets.resS",
+        "offset": 1011311088,
+        "length": 4943872,
+        "flags": 0,
+        "source": "sharedassets4.assets.resS",
+        "sha256": "577246CE3263F17637871DA3DE1FC89F93454C718C3CAF19F50BE1BF6F4FC055"
+      },
+      {
+        "name": "level4",
+        "offset": 1016254960,
+        "length": 8611280,
+        "flags": 4,
+        "source": "level4",
+        "sha256": "B47ED6DDFB2A3F5B09157CEBCC754512EAE6F778C54AEC181A2037F5CA1C2BCE",
+        "patch": "18.evdelta.gz"
+      },
+      {
+        "name": "sharedassets5.assets",
+        "offset": 1024866240,
+        "length": 14856416,
+        "flags": 4,
+        "source": "sharedassets5.assets",
+        "sha256": "56D0BD38EF8BC1143921776350B37B296437E8B8CD07D4F546E07FFDBD48E804",
+        "patch": "19.evdelta.gz"
+      },
+      {
+        "name": "sharedassets5.assets.resS",
+        "offset": 1039722656,
+        "length": 48308688,
+        "flags": 0,
+        "source": "sharedassets5.assets.resS",
+        "sha256": "DDD9D7AF6696298D8ACACAB81BD14BC0091843B10E807A3B82FB84E25F1FE1BB"
+      },
+      {
+        "name": "level5",
+        "offset": 1088031344,
+        "length": 51269408,
+        "flags": 4,
+        "source": "level5",
+        "sha256": "0407A3197A3650256E8C40B43758D761E0E4A11945ED7D507E41D16C2DCFBA60",
+        "patch": "21.evdelta.gz"
+      },
+      {
+        "name": "resources.assets",
+        "offset": 1139300752,
+        "length": 450427160,
+        "flags": 4,
+        "source": "resources.assets",
+        "sha256": "0DFC6433CE76202374BEF261A1DB187FBDDC2BC69C46D58648B1456FED0AD465",
+        "patch": "22.evdelta.gz"
+      },
+      {
+        "name": "resources.assets.resS",
+        "offset": 1589727912,
+        "length": 1346751280,
+        "flags": 0,
+        "source": "resources.assets.resS",
+        "sha256": "815CF43A9D887B438476718DD2461A538BC5162F51471F1282BB0FAE124B1CD4"
+      },
+      {
+        "name": "deferredworld.assets",
+        "offset": 2936479192,
+        "length": 15832,
+        "flags": 4,
+        "source": "sharedassets2.assets",
+        "sha256": "793B2F2F77FF68B8128455998A214685B8AEF92B5725694ED44FBD4857D299B9",
+        "patch": "24.evdelta.gz"
+      }
+    ],
+    "flags": 579,
+    "block_flags": 3
+  }
+}

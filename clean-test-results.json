@@ -1,0 +1,20 @@
+{
+  "checks": [
+    "Independent copy matches every fresh Steam file",
+    "Automatic Steam detection found the fresh installation",
+    "Clean original DLL and assets reconstruct exactly; both local caches match",
+    "Patched game created a fresh world and reached gameplay",
+    "Undo restores every original game file and removes the added helper",
+    "Fresh Steam installation unchanged",
+    "Normal saves unchanged"
+  ],
+  "timings_seconds": {
+    "Check": 1.23,
+    "Install": 163.19,
+    "gameplay_smoke": 28.47,
+    "Undo": 1.62
+  },
+  "installer_sha256": "87FF7AB873F5EC98510998DFB4B1B2C6DC43C28DD6A71AA2B2467FC377F98657",
+  "passed": true,
+  "clean_original_assembly_tested": true
+}
